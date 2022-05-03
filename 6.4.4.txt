@@ -1,0 +1,49 @@
+6.6.4
+N(n, d) = # of parenthesized expr of
+          length n and depth d
+
+
+"" in X
+A in X -> (A) in X
+A,B in X -> AB in X
+
+D(E) = 0         if E = ""
+     = D(A) + 1  if E = (A), A is BE
+     = max(D(A), D(B)) if E + AB
+
+
+""   ---> N(0,d) = 0 for any d
+"()" ---> N(2,1) = 1
+N(2,d) = 0 if d > 1
+N(odd,d) = 0 for any d
+
+
+
+
+
+
+Let X(n,d) be the set of balanced expression of length n and depth d.
+Let (E) in X(n,d). Then
+	E in X(n-2, d-1)
+Let AB in X(n,d) where each A and B are in some X. Then
+	A in X(1,d1)
+	B in X(n-1,d2) where d = max(d1, d2)
+or
+	A in X(2, d1)
+	B in X(n-2, d2) where d = max(d1, d2)
+
+Now:
+A in X(1,d1)
+B in X(n-1,d2) where d = max(d1, d2)
+is the same as
+A in X(1, i) and B in X(n-1, d-i) for i = 0,...,d
+
+Hence
+N(n,d) = N(n-2,d-1) +
+         sum for i = 1,...,n of
+		sum for j = 0,...,d of
+			N(i,j) * N(n-i,d-j)
+
+
+
+(6,2) = (4,1) + (1,0)*(

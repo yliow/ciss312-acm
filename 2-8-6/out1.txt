@@ -1,0 +1,13 @@
+Scenario 1
+***Smith,+M.N.+M.N.,+Smith, M.N.
+***Martin,+G.+G.,+Martin, G.
+***Erdos,+P.+P.:+Erdos, P.
+***Erdos,+P.+P.,+Erdos, P.
+***Reisig,+W.+W.:+Reisig, W.
+***Smith,+M.N.+M.N.,+Smith, M.N.
+***Chen,+X.+X.:+Chen, X.
+***Jablonski,+T.+T.,+Jablonski, T.
+***Hsueh,+Z.+Z.:+Hsueh, Z.
+Smith, M.N. 1
+Hsueh, Z. infinity
+Chen, X. 2

@@ -1,0 +1,12 @@
+#include <iostream>
+
+int gcd(m, n)
+{
+    if (m % n == 0) return n;
+    else return gcd(m % n, n);
+}
+
+int main()
+{
+    std::cout << gcd(5, 100) << '\n';
+}
